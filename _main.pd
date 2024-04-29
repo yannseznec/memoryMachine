@@ -272,6 +272,7 @@
 #X msg 1025 682 symbol \$1/sounds/*.aiff \, symbol \$1/sounds/*/;
 #X obj 834 422 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 835 387 loadbang;
+#X obj 855 511 print;
 #X connect 0 0 40 0;
 #X connect 2 0 39 0;
 #X connect 3 0 4 0;
@@ -350,6 +351,7 @@
 #X connect 76 0 78 0;
 #X connect 77 0 76 0;
 #X connect 79 0 81 0;
+#X connect 79 0 88 0;
 #X connect 80 0 60 0;
 #X connect 81 0 82 0;
 #X connect 81 1 62 0;
