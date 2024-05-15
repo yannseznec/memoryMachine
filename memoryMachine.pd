@@ -1,5 +1,5 @@
 #N canvas 564 110 567 577 12;
-#N canvas 97 179 697 496 guts 1;
+#N canvas 97 179 697 496 guts 0;
 #X obj 227 342 *~;
 #X obj 263 337 *~;
 #X obj 238 403 dac~;
@@ -87,7 +87,7 @@
 #X obj 146 247 clone singleMemory 50 1 \$0;
 #X obj 342 417 s \$0-vu-L;
 #X obj 426 419 s \$0-vu-R;
-#X obj 544 197 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 9 256;
+#X obj 544 197 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 10 256;
 #X obj 543 95 loadbang;
 #X obj 543 119 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 543 165 +;
