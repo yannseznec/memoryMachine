@@ -1,8 +1,0 @@
-#N canvas 470 235 934 637 12;
-#X floatatom 142 114 5 0 0 0 - - - 0;
-#X obj 101 190 s intensity_rcv;
-#X obj 123 67 random_sinearray;
-#X obj 148 150 * \$1;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;

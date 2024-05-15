@@ -87,7 +87,7 @@
 #X obj 38 144 inlet;
 #X obj 204 144 inlet;
 #X obj 361 151 inlet;
-#X obj 267 107 bng 19 250 50 0 \$0-reload empty reload 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 267 107 bng 19 250 50 0 \$0-reload reload_sounds_rcv reload 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 840 372 r \$0-reload;
 #X obj 965 286 outlet;
 #X obj 624 803 outlet;
@@ -103,7 +103,7 @@
 #X obj 589 414 symbol;
 #X obj 613 361 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 575 307 symbol \$1/*.WAV \, symbol \$1/*/;
-#X obj 25 38 nbx 4 17 1 2 0 0 \$0-select_folder \$0-select_folder_rcv select\ folder 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 25 38 nbx 4 17 1 1 0 0 \$0-select_folder \$0-select_folder_rcv select\ folder 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
 #X obj 920 791 s \$0-select_folder_rcv;
 #X obj 893 724 - 1;
 #X msg 905 758 range 1 \$1;
