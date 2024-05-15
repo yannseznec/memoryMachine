@@ -1,4 +1,4 @@
-#N canvas 310 32 1094 840 12;
+#N canvas 68 358 1094 840 12;
 #X obj 45 285 file glob;
 #X msg 45 310 \$2 \$1;
 #X obj 45 335 route 0 1;
@@ -112,6 +112,8 @@
 #X obj 60 716 file splitname;
 #X obj 60 740 unpack s s;
 #X obj 124 789 s \$0-soundfile;
+#X obj 137 826 outlet;
+#X obj 1048 319 inlet;
 #X connect 0 0 1 0;
 #X connect 0 1 4 0;
 #X connect 1 0 2 0;
@@ -213,4 +215,6 @@
 #X connect 107 0 105 0;
 #X connect 110 0 111 0;
 #X connect 111 1 112 0;
+#X connect 111 1 113 0;
+#X connect 114 0 75 0;
 #X coords 0 -1 1 1 380 130 1 5 5;
