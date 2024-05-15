@@ -1,4 +1,4 @@
-#N canvas 677 143 949 777 12;
+#N canvas 352 95 949 777 12;
 #X msg 129 447 stop;
 #X obj 765 559 s \$0-channels;
 #X obj 553 442 soundfiler;
@@ -109,7 +109,7 @@
 #X obj 503 90 r \$0-new_sound;
 #X obj 28 385 s \$0-selected_sound;
 #X obj 228 289 r \$0-selected_sound;
-#X obj 478 60 bng 19 250 50 0 empty empty start\ playback 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 478 60 bng 19 250 50 0 empty \$3-startall start\ playback 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 280 1074 outlet~;
 #X obj 345 1079 outlet~;
 #X obj 407 43 inlet;
@@ -226,7 +226,6 @@
 #X connect 79 0 69 0;
 #X connect 81 0 16 0;
 #X connect 82 0 2 0;
-#X connect 83 1 80 0;
 #X connect 83 1 31 0;
 #X connect 84 0 85 0;
 #X connect 85 0 86 0;
