@@ -9,7 +9,7 @@
 #X obj 245 210 pd~ -noutsig 2;
 #X obj 183 262 dac~;
 #X obj 302 252 dac~;
-#X msg 237 67 pd~ start memoryMachine_lite.pd;
+#X msg 234 67 pd~ start -nogui memoryMachine_lite.pd;
 #X connect 0 1 3 0;
 #X connect 0 2 3 1;
 #X connect 1 1 4 0;
