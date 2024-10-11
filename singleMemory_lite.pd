@@ -1,4 +1,4 @@
-#N canvas 430 68 949 777 12;
+#N canvas 299 68 949 777 12;
 #X msg 129 447 stop;
 #X obj 765 559 s \$0-channels;
 #X obj 553 442 soundfiler;
@@ -99,6 +99,8 @@
 #X obj 252 860 r \$2-intensity;
 #X obj 416 435 s \$2-counterbang;
 #X obj 128 575 readsf~;
+#X obj 979 207 inlet;
+#X msg 973 243 seed \$1;
 #X connect 0 0 99 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
@@ -204,3 +206,7 @@
 #X connect 99 0 66 0;
 #X connect 99 0 67 0;
 #X connect 99 1 62 0;
+#X connect 100 0 101 0;
+#X connect 101 0 19 0;
+#X connect 101 0 69 0;
+#X connect 101 0 32 0;

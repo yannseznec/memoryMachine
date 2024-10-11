@@ -86,7 +86,7 @@
 #X obj 434 398 r \$0-main_volume;
 #X obj 429 509 s \$0-vu-L;
 #X obj 513 511 s \$0-vu-R;
-#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 80 256;
+#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 93 256;
 #X obj 452 545 loadbang;
 #X obj 452 569 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 452 615 +;
@@ -158,6 +158,7 @@
 #X connect 17 0 18 0;
 #X connect 20 0 17 0;
 #X connect 20 1 39 0;
+#X connect 20 1 59 2;
 #X connect 22 0 23 0;
 #X connect 23 0 40 0;
 #X connect 24 0 59 1;
@@ -202,7 +203,7 @@
 #X connect 59 1 1 0;
 #X restore 208 239 pd guts;
 #X obj 17 12 cnv 19 250 220 empty empty memory\ machine 5 12 1 20 #c7c6ff #404040 0;
-#X obj 42 56 vsl 40 162 0 1 0 1 \$0-main_volume \$0-main_volume_rcv volume 0 -9 0 12 #feffc6 #000000 #000000 7801 1;
+#X obj 42 56 vsl 40 162 0 1 0 1 \$0-main_volume \$0-main_volume_rcv volume 0 -9 0 12 #feffc6 #000000 #000000 6514 1;
 #X obj 173 133 bng 40 250 50 0 stop_all \$0-stopall_rcv stop\ all 0 -10 0 12 #ff8300 #000000 #000000;
 #X obj 120 55 vsl 40 162 0 10 0 1 \$0-intensity \$0-intensity_rcv intensity -10 -9 0 12 #c6feff #000000 #000000 13413 1;
 #X obj 174 69 bng 40 250 50 0 \$0-startall \$0-startall_rcv start\ all 0 -10 0 12 #00ff04 #000000 #000000;
