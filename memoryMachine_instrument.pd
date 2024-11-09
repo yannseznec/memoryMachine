@@ -86,7 +86,7 @@
 #X obj 434 398 r \$0-main_volume;
 #X obj 429 509 s \$0-vu-L;
 #X obj 513 511 s \$0-vu-R;
-#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 42 256;
+#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 43 256;
 #X obj 452 545 loadbang;
 #X obj 452 569 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 452 615 +;
@@ -231,7 +231,9 @@
 #X obj 295 166 s \$0-startall_rcv;
 #X obj 421 110 sel 100;
 #X obj 428 133 s \$0-stopall_rcv;
+#X obj 341 214 print miditest;
 #X connect 19 0 20 0;
+#X connect 19 0 34 0;
 #X connect 20 0 21 0;
 #X connect 21 0 18 0;
 #X connect 22 0 23 0;
