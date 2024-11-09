@@ -86,7 +86,7 @@
 #X obj 434 398 r \$0-main_volume;
 #X obj 429 509 s \$0-vu-L;
 #X obj 513 511 s \$0-vu-R;
-#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 112 256;
+#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 117 256;
 #X obj 452 545 loadbang;
 #X obj 452 569 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 452 615 +;
