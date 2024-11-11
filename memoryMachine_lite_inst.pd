@@ -82,7 +82,7 @@
 #X msg 435 137 \; pd dsp 1;
 #X obj 429 509 s \$0-vu-L;
 #X obj 513 511 s \$0-vu-R;
-#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 170 256;
+#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 173 256;
 #X obj 452 545 loadbang;
 #X obj 452 569 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 452 615 +;
