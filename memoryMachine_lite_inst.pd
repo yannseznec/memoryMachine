@@ -82,7 +82,7 @@
 #X msg 435 137 \; pd dsp 1;
 #X obj 429 509 s \$0-vu-L;
 #X obj 513 511 s \$0-vu-R;
-#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 185 256;
+#X obj 453 647 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 189 256;
 #X obj 452 545 loadbang;
 #X obj 452 569 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 452 615 +;
@@ -117,7 +117,7 @@
 #X obj 93 411 s intensityOffset;
 #X floatatom 95 366 5 0 0 0 - - - 0;
 #X msg 427 298 all \$1;
-#X obj 235 341 clone singleMemory_ultralite 4 1 \$0;
+#X obj 235 341 clone singleMemory_ultralite 3 1 \$0;
 #X connect 1 0 41 0;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
