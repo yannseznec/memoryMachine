@@ -12,7 +12,7 @@
 #X msg 473 150 \; pd dsp 1;
 #X text 403 211 this seems like the most stable version on Pi;
 #X text 401 239 four memories at a time \, fading in and out;
-#X msg 234 67 pd~ start memoryMachine_lite.pd;
+#X msg 234 67 pd~ start -nogui memoryMachine_lite.pd;
 #X connect 0 1 3 0;
 #X connect 0 2 3 1;
 #X connect 1 1 4 0;
