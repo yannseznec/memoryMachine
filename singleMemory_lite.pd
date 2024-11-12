@@ -1,4 +1,4 @@
-#N canvas 453 95 949 777 12;
+#N canvas 40 263 949 777 12;
 #X msg 129 447 stop;
 #X obj 765 559 s \$0-channels;
 #X obj 553 442 soundfiler;
@@ -77,9 +77,9 @@
 #X obj 883 31 inlet;
 #X floatatom 829 211 5 0 0 0 - - - 0;
 #X msg 857 278 symbol \$1-dirfiles;
-#X obj 840 376 file splitname;
-#X obj 840 400 unpack s s;
-#X obj 231 371 t b b s b s b, f 40;
+#X obj 734 345 file splitname;
+#X obj 734 369 unpack s s;
+#X obj 233 403 t b b s b s b, f 40;
 #X obj 888 86 spigot;
 #X obj 883 160 i;
 #X obj 880 133 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -90,16 +90,16 @@
 #X obj 762 70 t f f;
 #X obj 763 43 >= 0;
 #X obj 763 19 r \$2-intensity;
-#X obj 677 376 s \$2-selected_sound;
+#X obj 590 369 s \$2-selected_sound;
 #X obj 655 268 tabread \$2-sample_selector;
 #X obj 905 123 r \$2-nextsound;
-#X obj 746 325 text get \$2-dirfiles;
+#X obj 659 318 text get \$2-dirfiles;
 #X obj 252 860 r \$2-intensity;
 #X obj 416 435 s \$2-counterbang;
 #X obj 128 575 readsf~;
 #X obj 979 207 inlet;
 #X msg 973 243 seed \$1;
-#X obj 660 447 print;
+#X obj 639 441 print;
 #X connect 0 0 97 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
@@ -171,7 +171,6 @@
 #X connect 70 0 68 0;
 #X connect 71 0 97 0;
 #X connect 72 0 2 0;
-#X connect 72 0 100 0;
 #X connect 73 0 92 0;
 #X connect 74 0 94 0;
 #X connect 75 0 76 0;
@@ -179,6 +178,7 @@
 #X connect 77 0 94 3;
 #X connect 78 0 79 0;
 #X connect 79 1 80 0;
+#X connect 79 1 100 0;
 #X connect 80 0 37 0;
 #X connect 80 2 38 0;
 #X connect 80 3 0 0;
