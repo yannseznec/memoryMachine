@@ -1,4 +1,4 @@
-#N canvas 218 511 928 325 12;
+#N canvas 126 437 928 325 12;
 #X obj 107 93 pd~ -noutsig 2;
 #X obj 233 95 pd~ -noutsig 2;
 #X msg 85 45 pd~ stop;
@@ -10,9 +10,9 @@
 #X obj 183 262 dac~;
 #X obj 302 252 dac~;
 #X msg 473 150 \; pd dsp 1;
-#X msg 234 67 pd~ start -nogui memoryMachine_lite.pd;
 #X text 403 211 this seems like the most stable version on Pi;
 #X text 401 239 four memories at a time \, fading in and out;
+#X msg 234 67 pd~ start memoryMachine_lite.pd;
 #X connect 0 1 3 0;
 #X connect 0 2 3 1;
 #X connect 1 1 4 0;
@@ -21,13 +21,13 @@
 #X connect 2 0 1 0;
 #X connect 2 0 6 0;
 #X connect 2 0 7 0;
-#X connect 5 0 11 0;
+#X connect 5 0 13 0;
 #X connect 5 0 10 0;
 #X connect 6 1 8 0;
 #X connect 6 2 8 1;
 #X connect 7 1 9 0;
 #X connect 7 2 9 1;
-#X connect 11 0 1 0;
-#X connect 11 0 0 0;
-#X connect 11 0 7 0;
-#X connect 11 0 6 0;
+#X connect 13 0 1 0;
+#X connect 13 0 0 0;
+#X connect 13 0 7 0;
+#X connect 13 0 6 0;
