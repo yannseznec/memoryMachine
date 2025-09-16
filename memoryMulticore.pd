@@ -13,7 +13,7 @@
 #X obj 331 419 pd~ -noutsig 2;
 #X msg 259 380 pd~ stop;
 #X msg 391 354 start_here \$1;
-#X obj 729 308 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 85 256;
+#X obj 729 308 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 144 256;
 #X obj 876 229 loadbang;
 #X obj 331 219 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 728 276 +;
@@ -49,7 +49,7 @@
 #X obj 384 768 pd~ -noutsig 2;
 #X msg 312 729 pd~ stop;
 #X msg 444 703 start_here \$1;
-#X obj 739 655 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 238 256;
+#X obj 739 655 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 296 256;
 #X obj 384 568 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 738 623 +;
 #X msg 738 601 1;
@@ -76,7 +76,7 @@
 #X obj 885 575 pd~ -noutsig 2;
 #X msg 813 536 pd~ stop;
 #X msg 945 510 start_here \$1;
-#X obj 1283 464 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 334 256;
+#X obj 1283 464 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 396 256;
 #X obj 885 375 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1282 432 +;
 #X msg 1282 410 1;
@@ -99,7 +99,7 @@
 #X obj 938 924 pd~ -noutsig 2;
 #X msg 866 885 pd~ stop;
 #X msg 998 859 start_here \$1;
-#X obj 1336 813 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 462 256;
+#X obj 1336 813 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 518 256;
 #X obj 938 724 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1335 781 +;
 #X msg 1335 759 1;
@@ -133,6 +133,7 @@
 #X obj 849 640 route current_volume current_pan;
 #X floatatom 849 664 5 0 0 0 - - - 0;
 #X floatatom 953 671 5 0 0 0 - - - 0;
+#X obj 44 175 loadbang;
 #X connect 0 0 1 0;
 #X connect 4 0 5 0;
 #X connect 5 0 8 0;
@@ -265,3 +266,4 @@
 #X connect 126 1 128 0;
 #X connect 129 0 130 0;
 #X connect 129 1 131 0;
+#X connect 132 0 70 0;
