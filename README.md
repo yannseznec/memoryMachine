@@ -18,3 +18,9 @@ These patches run well on a Bela, more details about that soon
 if you need these links:
 Pure Data https://puredata.info
 Bela https://bela.io
+
+to-do:
+- More stress testing of the system, make sure it doesn't crash or go silent after a long time
+- I think I need to revisit the random number assignment system a bit
+- new hardware enclosure/setup for the Bela version, PCB etc
+- Make some parameter customization? For adjusting how the random parameters get triggered, to enable better exploration of different types of sound libraries etc. Do this initially in the software and then eventually maybe in hardware too, to have knobs for adjusting how you want your memories presented
