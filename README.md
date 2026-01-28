@@ -20,7 +20,7 @@ Pure Data https://puredata.info
 Bela https://bela.io
 
 # current bug:
-running the patch on macOS, you actually currently need to have *two* subfolders in the directory, and the sounds need to be in the *second* folder (alphabetically). This is apparently because of a difference in how folders are counted in macOS vs Linux (for the Bela). 
+running the patch on macOS, you actually currently need to have *two* subfolders in the directory, and the sounds need to be in the *second* folder (alphabetically). This is apparently because of a difference in how folders are counted in macOS vs Linux (for the Bela). I don't know what the deal is on windows, should probably test that at some point but I'd like to just fix it more broadly.
 
 # to-do:
 - More stress testing of the system, make sure it doesn't crash or go silent after a long time
