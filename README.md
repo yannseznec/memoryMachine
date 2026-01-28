@@ -6,9 +6,9 @@ I use it with a library of 1100 sounds representing the audio tracks of every vi
 
 Currently designed to run either on a desktop computer or a Bela. I've been testing it mainly on a Bela Gem board. 
 
-To use: 
+# To use: 
 - download all the patches in this repo
-- make a folder in the same directory called "sounds" or something
+- make a folder in the same directory called "sounds" or something (see buglist below!)
 - put a lot of sound files in there. I'd recommend doing over 1000! Must be WAV or AIFF, and probably 44.1k though I am not certain of that
 - open "_main.pd" in Pure Data
 - the sounds should automatically be mixed and edited together endlessly
@@ -19,8 +19,12 @@ if you need these links:
 Pure Data https://puredata.info
 Bela https://bela.io
 
-to-do:
+# current bug:
+running the patch on macOS, you actually currently need to have *two* subfolders in the directory, and the sounds need to be in the *second* folder (alphabetically). This is apparently because of a difference in how folders are counted in macOS vs Linux (for the Bela). 
+
+# to-do:
 - More stress testing of the system, make sure it doesn't crash or go silent after a long time
 - I think I need to revisit the random number assignment system a bit
 - new hardware enclosure/setup for the Bela version, PCB etc
 - Make some parameter customization? For adjusting how the random parameters get triggered, to enable better exploration of different types of sound libraries etc. Do this initially in the software and then eventually maybe in hardware too, to have knobs for adjusting how you want your memories presented
+- Currently I think it will always restart the random path from the beginning. Would be good to store the current state in a text file so that it restarts from where it left off

@@ -2,9 +2,9 @@
 #X msg 83 51 vis 0 1;
 #X msg 151 50 vis 1 1;
 #X msg 214 52 vis 2 1;
-#X obj 122 131 clone memoryMachine_lite 6;
 #X text 72 162 argument integer is like the number of voices (number of simultaneously playing sounds). To experiment with! 6 seems like a lot \, but having a large number is fun in some ways too. Not sure what the maximum feasible on the Bela Gem is.;
 #X text 81 255 to-do: i guess have some debug controls in here (play/stop/volume/etc);
-#X connect 0 0 3 0;
-#X connect 1 0 3 0;
-#X connect 2 0 3 0;
+#X obj 122 131 clone memoryMachine_lite 16;
+#X connect 0 0 5 0;
+#X connect 1 0 5 0;
+#X connect 2 0 5 0;
