@@ -13,6 +13,7 @@ Currently designed to run either on a desktop computer or a Bela. I've been test
 - open "_main.pd" in Pure Data
 - the sounds should automatically be mixed and edited together endlessly
 
+
 These patches run well on a Bela, more details about that soon
 
 if you need these links:
@@ -23,8 +24,8 @@ Bela https://bela.io
 running the patch on macOS, you actually currently need to have *two* subfolders in the directory, and the sounds need to be in the *second* folder (alphabetically). This is apparently because of a difference in how folders are counted in macOS vs Linux (for the Bela). I don't know what the deal is on windows, should probably test that at some point but I'd like to just fix it more broadly.
 
 # to-do:
-- More stress testing of the system, make sure it doesn't crash or go silent after a long time
+- More stress testing of the system, figure out what the max number of voices is on Bela
 - I think I need to revisit the random number assignment system a bit
 - new hardware enclosure/setup for the Bela version, PCB etc
-- Make some parameter customization? For adjusting how the random parameters get triggered, to enable better exploration of different types of sound libraries etc. Do this initially in the software and then eventually maybe in hardware too, to have knobs for adjusting how you want your memories presented
+- Consider how the parameter change happens on the length of sound...currently the value only changes when a new sound is triggered, which results in potentially very long perceived latency when going from high value to low value. Maybe that's fine? Probably not, but not sure what would be a better way. 
 - Currently I think it will always restart the random path from the beginning. Would be good to store the current state in a text file so that it restarts from where it left off
