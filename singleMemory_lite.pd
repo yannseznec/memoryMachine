@@ -1,4 +1,4 @@
-#N canvas 344 96 1808 1162 12;
+#N canvas 15 37 1386 832 12;
 #X msg 153 460 stop;
 #X obj 765 559 s \$0-channels;
 #X obj 553 442 soundfiler;
@@ -112,6 +112,7 @@
 #X obj 870 1025 s \$0-new_sound;
 #X obj 1008 977 s \$0-playlength;
 #X obj 1117 768 r length_random;
+#X obj 1199 862 print length;
 #X connect 0 0 73 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
