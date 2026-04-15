@@ -1,4 +1,4 @@
-#N canvas 39 147 1363 725 12;
+#N canvas 335 142 925 566 12;
 #X obj 57 171 s stop_all;
 #X obj 58 142 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 56 225 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -139,6 +139,7 @@
 #X obj 457 605 print numSounds;
 #X msg 67 352 2;
 #X text 127 361 (Bela is 2 \, mac is 3);
+#X floatatom 903 542 5 0 0 0 - - - 0;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
 #X connect 4 0 2 0;
@@ -188,3 +189,4 @@
 #X connect 59 0 45 0;
 #X connect 62 0 56 0;
 #X connect 64 0 48 0;
+#X connect 66 0 8 0;
