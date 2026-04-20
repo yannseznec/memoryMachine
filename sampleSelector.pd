@@ -18,6 +18,7 @@
 #X floatatom 429 226 5 0 0 0 - - - 0;
 #X obj 427 200 inlet;
 #X obj 425 314 outlet;
+#X text 230 355 system for making a shuffled array of values matching the number of samples in the selected sample folder;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
