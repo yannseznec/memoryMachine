@@ -54,7 +54,7 @@
 #X msg 422 606 -1;
 #X obj 311 597 t f b;
 #X obj 834 322 s \$0-numsounds;
-#X floatatom 271 68 5 0 0 0 number\ of\ sounds \$0-numsounds - 10;
+#X floatatom 113 111 5 0 0 0 number\ of\ sounds \$0-numsounds - 10;
 #X symbolatom 113 88 16 0 0 0 current\ folder \$0-library - 0;
 #X obj 408 663 file split;
 #X obj 468 716 list length;
@@ -71,7 +71,7 @@
 #X floatatom 813 823 5 0 0 0 - - - 0;
 #X obj 814 846 i;
 #X obj 814 869 s \$0-selectlibrary;
-#X obj 272 39 bng 19 250 50 0 \$0-randomsound empty random\ sound 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 364 191 bng 19 250 50 0 \$0-randomsound empty random\ sound 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 45 522 r \$0-randomsound;
 #X obj 47 623 text get \$0-dirfiles;
 #X obj 47 570 random;
@@ -87,7 +87,7 @@
 #X obj 38 144 inlet;
 #X obj 204 144 inlet;
 #X obj 361 151 inlet;
-#X obj 267 107 bng 19 250 50 0 \$0-reload reload_sounds_rcv reload 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 161 114 bng 10 250 50 0 \$0-reload reload_sounds_rcv reload 10 5 0 12 #fcfcfc #000000 #000000;
 #X obj 840 372 r \$0-reload;
 #X obj 965 286 outlet;
 #X obj 624 803 outlet;
@@ -103,12 +103,12 @@
 #X obj 589 414 symbol;
 #X obj 613 361 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 575 307 symbol \$1/*.WAV \, symbol \$1/*/;
-#X obj 25 38 nbx 4 17 1 2 0 0 \$0-select_folder \$0-select_folder_rcv select\ folder 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 14 44 nbx 4 17 1 4 0 0 \$0-select_folder \$0-select_folder_rcv select\ folder 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
 #X obj 920 791 s \$0-select_folder_rcv;
 #X obj 893 724 - 1;
 #X msg 905 758 range 1 \$1;
-#X obj 178 39 nbx 4 17 -1e+37 1e+37 0 0 \$0-select_sound empty select\ sound 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
-#X symbolatom 113 111 16 0 0 0 current\ sound \$0-soundfile - 0;
+#X obj 214 183 nbx 4 17 -1e+37 1e+37 0 0 \$0-select_sound empty select\ sound 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X symbolatom 548 24 16 0 0 0 current\ sound \$0-soundfile - 0;
 #X obj 60 716 file splitname;
 #X obj 60 740 unpack s s;
 #X obj 124 789 s \$0-soundfile;
@@ -219,4 +219,4 @@
 #X connect 111 1 112 0;
 #X connect 111 1 113 0;
 #X connect 114 0 75 0;
-#X coords 0 -1 1 1 380 130 1 5 5;
+#X coords 0 -1 1 1 250 130 1 5 5;
